@@ -196,6 +196,7 @@ export const confessionConfig: ConfessionConfig = {
     "Me pasa algo simple y difícil de explicar: cuando hablamos, dejo de ensayar lo que voy a decir. Contigo salen las frases sin tanto filtro.",
     "No estoy pidiendo que digas nada hoy. Solo quería dejar constancia de esto, en un sitio donde no se diluya.",
     "Si esto te resulta raro, lo entiendo. A mí también me resultó raro armarlo. Aun así, preferí el riesgo de enviártelo que el de no decirte nada.",
+    "Te deseo lo mejor, de verdad: ánimo para lo que viene, días más livianos, y que te vaya súper bien en todo lo que te importe. Mereces eso y más.",
   ],
   // ✏️ Despedida de la carta.
   closing: "— Manuel",
