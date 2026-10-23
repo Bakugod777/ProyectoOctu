@@ -94,12 +94,12 @@ export const confessionConfig: ConfessionConfig = {
   // Lo reemplaza el nombre que ella escribe en la primera pantalla.
   to: "",
   // ✏️ TU NOMBRE (o mándalo por URL: ?de=TuNombre).
-  from: "[TU NOMBRE]",
+  from: "Manuel",
   // ✏️ Lo primero que notaste de ella (va en “Lo primero que noté de ti fue …”).
   // Frase genérica de reemplazo; cámbiala por algo de verdad.
   recuerdo: "que eras fácil de hablar, sin forzarla",
   captorName: "Sirius",
-  dateLabel: "31 de octubre",
+  dateLabel: "Para ti",
   headline: "Te secuestraron. Tranquilo: es una broma.",
   invite:
     "Son 5 pruebas cortas y al final una carta. Toca para continuar.",
@@ -190,15 +190,16 @@ export const confessionConfig: ConfessionConfig = {
     "que es solo por Halloween",
     "que no siento nada",
   ],
-  // ✏️ LA CARTA: un párrafo por línea. Este texto es de ejemplo; escríbela tú.
+  // ✏️ LA CARTA: un párrafo por línea.
   letter: [
-    "Si llegaste hasta aquí, gracias. Sé que es un poco raro mandar una página en vez de un mensaje.",
-    "No hice esto para que me contestes hoy. Solo no quería dejar pasar el 31 sin decir nada.",
-    "Me caíste bien. Hablo más fácil contigo. Miro el celular de más cuando hablamos. Eso es todo.",
-    "Si hay algo de tu lado, me dices cuando quieras. Si no, igual gracias por leer.",
+    "Si llegaste hasta aquí, gracias por quedarte. No es fácil decir ciertas cosas en voz alta, así que las dejé en esta página.",
+    "Hay personas que entran sin hacer ruido y, aun así, cambian el tono de los días. Tú eres una de ellas.",
+    "Contigo el tiempo se vuelve más liviano. Las conversaciones se alargan sin pedirlo. Y el silencio, cuando llega, no pesa: solo espera.",
+    "No te pido una respuesta ahora. Solo quería que sepas que existes en mis pensamientos con más cuidado del que suelo admitir.",
+    "Si alguna vez sientes lo mismo, aquí estaré. Y si no, igual gracias por haber leído hasta el final.",
   ],
   // ✏️ Despedida de la carta.
-  closing: "— [TU]",
+  closing: "Con cariño discreto,\nManuel",
 };
 
 /** Reemplaza [ELLA], [TU] y [RECUERDO] en un texto. */
