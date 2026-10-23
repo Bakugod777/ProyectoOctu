@@ -93,7 +93,7 @@ function Notes({
     if (next >= 3) {
       setDone(true);
       onTone?.("reveal");
-      setHint(`¡Los tres prendidos! Desbloqueaste: ${fragment}`);
+      setHint(`Los tres encendidos. Completado: ${fragment}`);
       finish();
     }
   }

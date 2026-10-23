@@ -81,7 +81,7 @@ export function Epilogue({ to, from, muted }: Props) {
 
       {reply === "also" && (
         <>
-          <p className="font-display text-xl text-[#f6e7c8]">Uy, qué chévere. No era solo yo.</p>
+          <p className="font-display text-xl text-[#f6e7c8]">Bien. No era solo yo.</p>
           <p className="mt-3 text-[14px] leading-6 text-[#c9d5d8]">
             Gracias, {to}.
           </p>
@@ -92,7 +92,7 @@ export function Epilogue({ to, from, muted }: Props) {
         <>
           <p className="font-display text-xl text-[#f6e7c8]">Está bien.</p>
           <p className="mt-3 text-[14px] leading-6 text-[#c9d5d8]">
-            Tómate tu tiempo, no hay afán.
+            Tómate tu tiempo. No hay prisa.
           </p>
         </>
       )}

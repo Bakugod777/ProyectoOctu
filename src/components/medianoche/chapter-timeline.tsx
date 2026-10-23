@@ -87,7 +87,7 @@ function Timeline({
     onTone?.("ok");
     const next = [...picked, id];
     setPicked(next);
-    setHint(next.length < order.length ? "Bien. ¿Y después?" : `En orden. Desbloqueaste: ${beatTitle}`);
+    setHint(next.length < order.length ? "Bien. ¿Y después?" : `En orden. Completado: ${beatTitle}`);
     if (next.length >= order.length) {
       setDone(true);
       onTone?.("reveal");
