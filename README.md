@@ -22,8 +22,12 @@ npm run build    # exporta estático a out/
 
 Ilustraciones opcionales: `public/scenes/*.webp` (ver LEEME.txt ahí).
 
-## Publicar
+## Publicar (GitHub Pages)
 
-Es un sitio 100 % estático: después de `npm run build` sube la carpeta `out/` a cualquier hosting estático (Netlify, Vercel, Cloudflare Pages, GitHub Pages…).
+1. Mergea este cambio a `main`.
+2. En el repo: **Settings → Pages → Source: GitHub Actions** (ya lo tienes así).
+3. Espera a que termine el workflow **Deploy GitHub Pages**.
+
+Sitio: https://bakugod777.github.io/ProyectoOctu/
 
 Ojo: todo el texto (carta y respuestas) viaja en el JavaScript del sitio; quien sepa mirar el código fuente lo puede leer. Manda el link solo a ella.
