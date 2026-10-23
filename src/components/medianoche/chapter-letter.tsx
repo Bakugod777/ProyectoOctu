@@ -105,11 +105,11 @@ export function ChapterLetter({
 
 
   return (
-    <section className="chapter-in relative z-10 mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-4 pb-16 pt-[max(5.75rem,calc(var(--safe-top)+5rem))] sm:px-6">
+    <section className="chapter-in relative z-10 mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-4 pb-[max(4rem,calc(var(--safe-bottom)+3rem))] pt-[max(5.75rem,calc(var(--safe-top)+5rem))] sm:px-6 short:pt-[max(4.5rem,calc(var(--safe-top)+4rem))]">
       <span className="eyebrow">
         <span aria-hidden>✉</span> {dateLabel}
       </span>
-      <h2 className="mt-3 font-display text-[clamp(2rem,7vw,2.9rem)] font-semibold leading-tight text-[var(--moon)]">
+      <h2 className="mt-3 font-display text-[clamp(2rem,7vw,2.9rem)] font-semibold leading-tight short:text-[1.6rem] text-[var(--moon)]">
         Para {to}
       </h2>
 
@@ -122,7 +122,7 @@ export function ChapterLetter({
                 : `Arrastra el sello de lacre para romperlo y ${sealWord}.`
               : "Abriendo…"}
           </p>
-          <div className="relative mt-10 mb-6">
+          <div className="relative mt-10 mb-6 short:mt-4">
             <div className={["envelope", phase !== "sealed" ? "is-open" : ""].join(" ")}>
               <div className="env-back" />
               <div className="env-letter paper p-4">

@@ -202,23 +202,23 @@ export function MedianocheApp() {
           <NameScreen initial={name || prefill} dateLabel={config.dateLabel} brand={config.brand} onSubmit={chooseName} />
         )}
         {!askName && name && cur.kind === "title" && (
-          <section className="chapter-in relative flex min-h-dvh flex-col items-center justify-end px-4 pb-[max(2rem,var(--safe-bottom))] pt-16 text-center sm:px-8">
-            <div className="w-[min(52vw,220px)] sm:w-[240px]">
+          <section className="chapter-in relative flex min-h-dvh flex-col items-center justify-end px-4 pb-[max(2rem,calc(var(--safe-bottom)+1rem))] pt-[max(4rem,calc(var(--safe-top)+3rem))] text-center sm:px-8 short:min-h-dvh short:flex-row short:items-end short:justify-center short:gap-3 short:overflow-y-auto short:pb-[max(0.75rem,var(--safe-bottom))] short:pt-[max(3.5rem,calc(var(--safe-top)+3rem))]">
+            <div className="w-[min(52vw,220px,30svh)] shrink-0 sm:w-[min(240px,30svh)] short:mb-0 short:w-[min(22vw,42svh)]">
               <Owl pose="feliz" />
             </div>
-            <div className="panel mt-[-10px] w-full max-w-xl px-5 py-7 sm:px-8">
+            <div className="panel mt-[-10px] w-full max-w-xl px-5 py-7 sm:px-8 short:mt-0 short:min-w-0 short:flex-1 short:px-4 short:py-4">
               <p className="eyebrow justify-center">
                 {config.dateLabel} · {config.brand}
               </p>
-              <p className="mt-3 font-display text-[clamp(2.4rem,11vw,4.4rem)] font-semibold leading-[0.95] tracking-[-0.02em] text-[var(--moon)]">
+              <p className="mt-3 font-display text-[clamp(2.4rem,11vw,4.4rem)] font-semibold leading-[0.95] tracking-[-0.02em] text-[var(--moon)] short:mt-1 short:text-[clamp(1.5rem,6vw,2rem)]">
                 Hola, {config.to}.
               </p>
-              <h1 className="mx-auto mt-4 max-w-md font-display text-[clamp(1.2rem,4.4vw,1.6rem)] leading-snug text-[#f0e2c8]">
+              <h1 className="mx-auto mt-4 max-w-md font-display text-[clamp(1.2rem,4.4vw,1.6rem)] leading-snug text-[#f0e2c8] short:mt-2 short:text-[1.05rem]">
                 {config.headline}
               </h1>
-              <p className="mx-auto mt-3 max-w-md text-[15px] leading-7 text-[var(--mist)]">{config.invite}</p>
-              <p className="mt-2 text-[13px] text-white/45">{config.howItWorks}</p>
-              <div className="mt-6 flex flex-col items-center gap-2 sm:flex-row sm:justify-center">
+              <p className="mx-auto mt-3 max-w-md text-[15px] leading-7 text-[var(--mist)] short:mt-1 short:line-clamp-2 short:text-[13px] short:leading-5">{config.invite}</p>
+              <p className="mt-2 text-[13px] text-white/45 short:hidden">{config.howItWorks}</p>
+              <div className="mt-6 flex flex-col items-center gap-2 sm:flex-row sm:justify-center short:mt-3">
                 {saved > 0 ? (
                   <>
                     <button type="button" className="btn btn-ember w-full sm:w-auto" onClick={() => void begin(saved)}>
@@ -234,8 +234,8 @@ export function MedianocheApp() {
                   </button>
                 )}
               </div>
-              <p className="mt-4 text-[12px] text-white/40">Tiene sonido suave · lo puedes apagar arriba a la derecha.</p>
-              <button type="button" className="btn-quiet mt-1" onClick={() => setAskName(true)}>
+              <p className="mt-4 text-[12px] text-white/40 short:mt-2 short:hidden">Tiene sonido suave · lo puedes apagar arriba a la derecha.</p>
+              <button type="button" className="btn-quiet mt-1 short:mt-0.5" onClick={() => setAskName(true)}>
                 ¿No eres {config.to}? Cambiar nombre
               </button>
             </div>

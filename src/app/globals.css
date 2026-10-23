@@ -3,6 +3,8 @@
 @import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
+/* iPhone acostado (poca altura): diálogos en fila, búho más chico. */
+@custom-variant short (@media (orientation: landscape) and (max-height: 540px));
 
 @theme inline {
   --color-background: var(--background);
@@ -89,8 +91,18 @@
   .font-display {
     font-family: var(--font-display), Georgia, "Times New Roman", serif;
   }
-  button {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  button, a, input, label, [role="button"] {
     touch-action: manipulation;
+  }
+  button, [role="button"] {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
   }
 }
 
@@ -349,7 +361,9 @@
 /* Sobre + lacre */
 .envelope {
   position: relative;
-  width: min(100%, 420px);
+  /* En horizontal el sobre cabe en la pantalla sin hacer scroll para llegar al sello. */
+  width: min(100%, 420px, calc((100svh - 9rem) * 1.4));
+  min-width: min(100%, 260px);
   aspect-ratio: 7 / 5;
   margin-inline: auto;
   perspective: 1200px;

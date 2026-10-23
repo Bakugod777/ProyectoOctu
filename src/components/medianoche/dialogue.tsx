@@ -78,7 +78,7 @@ export function Dialogue({ lines, names, onDone, onTone }: Props) {
 
   return (
     <section
-      className="relative z-10 flex min-h-dvh cursor-pointer flex-col justify-end px-3 pb-[max(1rem,var(--safe-bottom))] pt-24 sm:px-6"
+      className="relative z-10 flex min-h-dvh cursor-pointer select-none flex-col justify-end px-3 pb-[max(1rem,var(--safe-bottom))] pt-[max(4.5rem,calc(var(--safe-top)+3.75rem))] sm:px-6 short:flex-row short:items-end short:justify-center short:gap-4 short:pt-[max(3.75rem,calc(var(--safe-top)+3.25rem))]"
       onClick={advance}
       aria-label="Diálogo. Toca para seguir."
     >
@@ -86,7 +86,7 @@ export function Dialogue({ lines, names, onDone, onTone }: Props) {
         <div
           key={lastOwlPose ?? "n"}
           className={[
-            "pop mx-auto mb-[-14px] w-[min(46vw,210px)] transition-opacity duration-300 sm:w-[230px]",
+            "pop relative z-[1] mx-auto mb-[-8px] w-[min(46vw,210px,30svh)] shrink-0 transition-opacity duration-300 sm:w-[min(230px,32svh)] short:mx-0 short:mb-0 short:w-[min(28vw,52svh)]",
             line.who === "buho" ? "opacity-100" : "opacity-60",
           ].join(" ")}
         >
@@ -94,7 +94,7 @@ export function Dialogue({ lines, names, onDone, onTone }: Props) {
         </div>
       )}
 
-      <div className="paper relative mx-auto w-full max-w-2xl rounded-2xl px-5 pb-5 pt-7 sm:px-7">
+      <div className="paper relative z-[2] mx-auto w-full max-w-2xl shrink-0 rounded-2xl px-5 pb-5 pt-7 sm:px-7 short:mx-0 short:min-w-0 short:flex-1">
         {speaker && (
           <span
             className={[

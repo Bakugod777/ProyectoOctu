@@ -27,7 +27,7 @@ export function ChapterFrame({
   children,
 }: Props) {
   return (
-    <section className="chapter-in relative z-10 mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-4 pb-36 pt-[max(4.75rem,calc(var(--safe-top)+4rem))] sm:px-6">
+    <section className="chapter-in relative z-10 mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-4 pb-[max(9rem,calc(var(--safe-bottom)+8rem))] pt-[max(4.75rem,calc(var(--safe-top)+4rem))] sm:px-6 short:max-w-3xl short:pb-16 short:pt-[max(4rem,calc(var(--safe-top)+3.5rem))]">
       <div className="flex items-center justify-between gap-3">
         <span className="eyebrow">
           <span aria-hidden>✦</span> Juego {index} de 5
@@ -38,7 +38,7 @@ export function ChapterFrame({
           </span>
         )}
       </div>
-      <h2 className="mt-3 font-display text-[clamp(1.75rem,6.4vw,2.6rem)] font-semibold leading-[1.08] tracking-[-0.01em] text-[var(--moon)]">
+      <h2 className="mt-3 font-display text-[clamp(1.75rem,6.4vw,2.6rem)] short:text-[1.6rem] font-semibold leading-[1.08] tracking-[-0.01em] text-[var(--moon)]">
         {title}
       </h2>
       <p

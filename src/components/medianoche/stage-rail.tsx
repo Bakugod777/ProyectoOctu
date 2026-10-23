@@ -9,7 +9,7 @@ export function StageRail({ active, done, inline }: { active: number; done: numb
   return (
     <nav
       aria-label={`Progreso: prueba ${Math.min(active + 1, 6)} de 6`}
-      className={cn(inline ? "absolute" : "fixed", "pointer-events-none left-0 right-[3.75rem] top-[max(0.75rem,var(--safe-top))] z-40 flex justify-center px-3 sm:right-0")}
+      className={cn(inline ? "absolute" : "fixed", "pointer-events-none left-[var(--safe-left)] right-[calc(3.75rem+var(--safe-right))] top-[max(0.75rem,var(--safe-top))] z-40 flex justify-center px-3 sm:right-0")}
     >
       <ol className="flex items-center gap-1 rounded-full border border-white/10 bg-[#070a18]/70 px-2 py-1.5 backdrop-blur-md">
         {STEPS.map((label, i) => {
