@@ -89,7 +89,7 @@ function Memory({
         if (nm.length >= pairs.length) {
           setDone(true);
           onTone?.("reveal");
-          setHint(`¡Todas! Desbloqueaste: ${beatTitle}`);
+          setHint(`Completado: ${beatTitle}`);
           finish();
         }
       }, 350);

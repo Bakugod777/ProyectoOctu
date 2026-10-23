@@ -94,73 +94,73 @@ export const confessionConfig: ConfessionConfig = {
   // Lo reemplaza el nombre que ella escribe en la primera pantalla.
   to: "",
   // ✏️ TU NOMBRE (o mándalo por URL: ?de=TuNombre).
-  from: "[TU NOMBRE]",
+  from: "Manuel",
   // ✏️ Lo primero que notaste de ella (va en “Lo primero que noté de ti fue …”).
   // Frase genérica de reemplazo; cámbiala por algo de verdad.
-  recuerdo: "tu risa, esa que se te sale cuando intentas no reírte",
+  recuerdo: "que eras fácil de hablar, sin forzarla",
   captorName: "Sirius",
-  dateLabel: "31 de octubre",
-  headline: "Te secuestraron. Tranqui, que es con cariño.",
+  dateLabel: "Para ti",
+  headline: "Te secuestraron. Tranquilo: es una broma.",
   invite:
-    "Son 5 pruebas cortiticas y al final una carta. Toca la pantalla para avanzar los diálogos.",
+    "Son 5 pruebas cortas y al final una carta. Toca para continuar.",
   howItWorks: "faroles · estrellas · memoria · fotos · verdad · carta",
   sealWord: "abrir",
   script: {
     intro: [
-      { who: "buho", pose: "feliz", text: "Buenas noches, [ELLA]. ¿Qué más? Soy Sirius, el búho. Tranqui, aquí nadie te va a hacer daño… salvo de pura ternura." },
-      { who: "buho", pose: "normal", text: "Esta noche estás secuestrada. Para salir tienes que pasar 5 pruebas." },
+      { who: "buho", pose: "feliz", text: "Hola, [ELLA]. Soy Sirius. No te preocupes: esto es un juego, no un secuestro de verdad." },
+      { who: "buho", pose: "normal", text: "Para salir tienes que pasar 5 pruebas. Son cortas." },
       { who: "ella", text: "¿Y si no quiero?" },
-      { who: "buho", pose: "feliz", text: "Pues te quedas conmigo comiendo dulces. Las dos opciones son bacanas." },
+      { who: "buho", pose: "feliz", text: "Entonces te quedas aquí aburrida. Mejor hazlas y listo." },
     ],
     lanternsIntro: [
-      { who: "buho", pose: "normal", text: "La puerta tiene 3 faroles apagados. Cada uno guarda algo que alguien piensa de ti." },
+      { who: "buho", pose: "normal", text: "Tres faroles. Enciéndelos y vas a leer tres notas." },
     ],
     lanternsWin: [
       { who: "buho", pose: "feliz", text: "Lo primero que noté de ti fue [RECUERDO]." },
     ],
     starsIntro: [
-      { who: "buho", pose: "normal", text: "Desde aquí se ve el camino, pero solo si unes las estrellas." },
+      { who: "buho", pose: "normal", text: "Une las estrellas. Así de simple." },
     ],
     starsWin: [
-      { who: "buho", pose: "sorprendido", text: "¡Uy, qué chévere! Hasta el cielo te conoce, [ELLA]." },
+      { who: "buho", pose: "sorprendido", text: "Hecho. Buen ojo, [ELLA]." },
     ],
     memoryIntro: [
-      { who: "buho", pose: "normal", text: "Este pasillo está lleno de cositas que alguien no se quiere olvidar." },
+      { who: "buho", pose: "normal", text: "Ahora junta las tarjetas que van juntas." },
     ],
     memoryWin: [
-      { who: "buho", pose: "feliz", text: "Todo eso quedó guardadito. Sigamos, que ya casi." },
+      { who: "buho", pose: "feliz", text: "Bien. Sigamos." },
     ],
     timelineIntro: [
-      { who: "buho", pose: "sorprendido", text: "¡Ay, se cayeron las fotos! Ponlas en orden y vas a ver una historia." },
+      { who: "buho", pose: "sorprendido", text: "Se mezclaron las fotos. Ordénalas como creas que ocurrió." },
     ],
     timelineWin: [
-      { who: "buho", pose: "normal", text: "Primero te notó. Después buscaba excusas. Después le dio miedo. Y ahora… esto." },
+      { who: "buho", pose: "normal", text: "Más o menos así: te conoció, habló de más, dudó, y terminó haciendo esto." },
     ],
     whisperIntro: [
-      { who: "buho", pose: "normal", text: "Última prueba, parce. Una sola pregunta, y la tabla no miente." },
+      { who: "buho", pose: "normal", text: "Última. Una pregunta. Sin trampa." },
     ],
     whisperWin: [
-      { who: "buho", pose: "feliz", text: "Correcto. Ya eres libre… casi." },
+      { who: "buho", pose: "feliz", text: "Correcto. Ya casi sales." },
     ],
     finale: [
-      { who: "narra", text: "La puerta se abre. Entra olor a flores y a velas recién prendidas." },
-      { who: "buho", pose: "sinCapa", text: "Era yo, [TU]. Sirius solo me prestó las plumas. Te secuestré porque un mensaje se me quedaba corto." },
-      { who: "buho", pose: "sinCapa", text: "Antes de que te vayas… esto es para ti." },
+      { who: "narra", text: "La puerta se abre." },
+      { who: "buho", pose: "sinCapa", text: "Era yo, [TU]. Sirius era el disfraz. Un mensaje normal se me hacía corto, así que hice esto." },
+      { who: "buho", pose: "sinCapa", text: "Lee esto cuando quieras." },
     ],
   },
   storyBeats: [
     { title: "Los faroles", body: "Lo primero que noté de ti fue [RECUERDO]." },
-    { title: "Las estrellas", body: "Hasta el cielo te conoce." },
-    { title: "El pasillo", body: "Tus “ya casi”. Las “cositas” que terminan a la 1 a. m. El “ya me voy” que nunca es ya." },
-    { title: "Las fotos", body: "Primero te notó. Después buscaba excusas. Después le dio miedo. Y ahora… esto." },
-    { title: "La verdad", body: "Me importas más de lo que aparento." },
+    { title: "Las estrellas", body: "Las uniste a la primera." },
+    { title: "El pasillo", body: "“Ya casi”, “solo una cosa”, y el “ya me voy” que se alarga." },
+    { title: "Las fotos", body: "Te conoció. Habló de más. Dudó. Y hizo esta página." },
+    { title: "La verdad", body: "Me caíste bien más de lo que dejé ver." },
   ],
   lanternTitle: "Prueba 1 · Los faroles",
-  lanternLead: "Prende los faroles en orden: 1, 2 y 3.",
+  lanternLead: "Enciende los faroles en orden: 1, 2 y 3.",
   lanternClues: [
-    "Cuando hablamos, se me pasa el tiempo volando.",
-    "A veces me invento una excusa para no colgar.",
-    "Cuando te vas, el silencio pesa.",
+    "Hablando contigo se me va la hora.",
+    "A veces invento un tema para no colgar todavía.",
+    "Cuando termina el chat, el silencio se nota.",
   ],
   starTitle: "Prueba 2 · La ventana",
   starPrompt: "Une las estrellas en orden. Toca o arrastra el dedo.",
@@ -168,37 +168,38 @@ export const confessionConfig: ConfessionConfig = {
   memoryLead: "Junta las que van juntas.",
   // ✏️ Cartas de memoria: frases genéricas, cámbialas por cosas de ustedes.
   memoryPairs: [
-    { id: "m1", a: "“ya casi”", b: "media hora después", note: "Cómo me escribes “ya casi” y llegas media hora después, y aun así vale la pena esperarte." },
-    { id: "m2", a: "“una cosita”", b: "la 1 de la mañana", note: "Las conversaciones que empiezan con “una cosita” y terminan a la 1 de la mañana." },
-    { id: "m3", a: "“ya me voy”", b: "5 minuticos más", note: "El “ya me voy” que nunca es ya." },
+    { id: "m1", a: "“ya casi”", b: "media hora después", note: "Dices “ya casi” y llegas media hora tarde." },
+    { id: "m2", a: "“solo una cosa”", b: "la 1 de la mañana", note: "Empieza con “solo una cosa” y acaba a la 1 a. m." },
+    { id: "m3", a: "“ya me voy”", b: "cinco minutos más", note: "Dices “ya me voy” y te quedas un rato más." },
   ],
   timelineTitle: "Prueba 4 · Las fotos",
-  timelineLead: "Toca las fotos en el orden en que pasó.",
+  timelineLead: "Toca las fotos en el orden en que ocurrió.",
   timelineItems: [
-    { id: "t1", label: "Te notó" },
-    { id: "t2", label: "Buscaba excusas para hablarte" },
-    { id: "t3", label: "Le dio miedo decírtelo" },
-    { id: "t4", label: "Armó esta noche" },
+    { id: "t1", label: "Te conoció" },
+    { id: "t2", label: "Empezó a hablarte de más" },
+    { id: "t3", label: "Dudó en decirlo" },
+    { id: "t4", label: "Hizo esta página" },
   ],
   timelineOrder: ["t1", "t2", "t3", "t4"],
   whisperTitle: "Prueba 5 · La tabla",
   whisperPrompt: "Si tuviera que admitir una sola cosa…",
-  whisperAnswer: "que me importas más de lo que aparento",
+  whisperAnswer: "que me caíste bien más de lo que dejé ver",
   whisperOptions: [
-    "que me importas más de lo que aparento",
+    "que me caíste bien más de lo que dejé ver",
     "que es pura costumbre",
-    "que es una broma de Halloween",
+    "que es solo por Halloween",
     "que no siento nada",
   ],
-  // ✏️ LA CARTA: un párrafo por línea. Este texto es de ejemplo; escríbela tú.
+  // ✏️ LA CARTA: un párrafo por línea.
   letter: [
-    "Bueno. Si llegaste hasta aquí, ya te tocó todo el cuento de las pruebas. Gracias por no cerrarlo a la mitad.",
-    "No te armé esto para que me contestes ya. Solo no quería pasar otro 31 sin decirte nada.",
-    "Cuando estás, me río más fácil. Miro el celular más de la cuenta. Se me ocurren excusas bobas para seguir hablando contigo. Eso es todo.",
-    "Si sientes aunque sea un poquito de eso, me dices cuando quieras. Y si no, igual… gracias por leer.",
+    "Si llegaste hasta aquí, gracias por quedarte. No es fácil decir ciertas cosas en voz alta, así que las dejé en esta página.",
+    "Hay personas que entran sin hacer ruido y, aun así, cambian el tono de los días. Tú eres una de ellas.",
+    "Contigo el tiempo se vuelve más liviano. Las conversaciones se alargan sin pedirlo. Y el silencio, cuando llega, no pesa: solo espera.",
+    "No te pido una respuesta ahora. Solo quería que sepas que existes en mis pensamientos con más cuidado del que suelo admitir.",
+    "Si alguna vez sientes lo mismo, aquí estaré. Y si no, igual gracias por haber leído hasta el final.",
   ],
   // ✏️ Despedida de la carta.
-  closing: "Escrito con nervios, de verdad.",
+  closing: "Con cariño discreto,\nManuel",
 };
 
 /** Reemplaza [ELLA], [TU] y [RECUERDO] en un texto. */

@@ -57,7 +57,7 @@ function Whisper({
       setWon(true);
       onTone?.("reveal");
       onUnlock();
-      setHint(`Esa. Desbloqueaste: ${fragment}`);
+      setHint(`Correcto. Completado: ${fragment}`);
       return;
     }
     onTone?.("bad");
