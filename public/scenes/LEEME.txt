@@ -1,0 +1,3 @@
+Poné acá ilustraciones reales (opcional), en formato .webp, con estos nombres:
+cuarto.webp  puerta.webp  ventana.webp  pasillo.webp  escalera.webp  guardian.webp  abierta.webp
+Si un archivo no está, la escena usa el fondo de papel recortado hecho en SVG/CSS.
