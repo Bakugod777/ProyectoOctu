@@ -192,14 +192,15 @@ export const confessionConfig: ConfessionConfig = {
   ],
   // ✏️ LA CARTA: un párrafo por línea.
   letter: [
-    "Si llegaste hasta aquí, gracias por quedarte. No es fácil decir ciertas cosas en voz alta, así que las dejé en esta página.",
-    "Hay personas que entran sin hacer ruido y, aun así, cambian el tono de los días. Tú eres una de ellas.",
-    "Contigo el tiempo se vuelve más liviano. Las conversaciones se alargan sin pedirlo. Y el silencio, cuando llega, no pesa: solo espera.",
-    "No te pido una respuesta ahora. Solo quería que sepas que existes en mis pensamientos con más cuidado del que suelo admitir.",
-    "Si alguna vez sientes lo mismo, aquí estaré. Y si no, igual gracias por haber leído hasta el final.",
+    "Podría haberte escrito un mensaje corto. Lo borré tres veces. Esta página salió porque no quería que se perdiera entre otras notificaciones.",
+    "Me pasa algo simple y difícil de explicar: cuando hablamos, dejo de ensayar lo que voy a decir. Contigo salen las frases sin tanto filtro.",
+    "No estoy pidiendo que digas nada hoy. Solo quería dejar constancia de esto, en un sitio donde no se diluya.",
+    "Si esto te resulta raro, lo entiendo. A mí también me resultó raro armarlo. Aun así, preferí el riesgo de enviártelo que el de no decirte nada.",
+    "Te deseo lo mejor, de verdad: ánimo para lo que viene, días más livianos, y que te vaya súper bien en todo lo que te importe. Mereces eso y más.",
+    "Te amo.",
   ],
   // ✏️ Despedida de la carta.
-  closing: "Con cariño discreto,\nManuel",
+  closing: "— Manuel",
 };
 
 /** Reemplaza [ELLA], [TU] y [RECUERDO] en un texto. */
