@@ -28,8 +28,8 @@ export function NameScreen({ initial, dateLabel, brand, onSubmit }: Props) {
   }
 
   return (
-    <section className="chapter-in relative flex min-h-dvh flex-col items-center justify-center px-4 py-14 text-center sm:px-8">
-      <div className="w-[min(40vw,170px)] sm:w-[190px]">
+    <section className="chapter-in relative flex min-h-dvh flex-col items-center justify-center px-4 pb-[max(2rem,calc(var(--safe-bottom)+1rem))] pt-[max(3.5rem,calc(var(--safe-top)+3rem))] text-center sm:px-8">
+      <div className="w-[min(40vw,170px,24svh)] shrink-0 sm:w-[min(190px,24svh)]">
         <Owl pose="normal" />
       </div>
       <form

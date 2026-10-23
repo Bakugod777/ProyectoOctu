@@ -148,7 +148,7 @@ function Stars({
         onPointerMove={onMove}
         onPointerUp={onUp}
         onPointerCancel={onUp}
-        className="panel relative mx-auto aspect-square w-full max-w-[420px] touch-none overflow-hidden select-none"
+        className="panel relative mx-auto aspect-square w-full max-w-[min(420px,calc(100svh-7rem))] min-w-[min(100%,240px)] touch-none overflow-hidden select-none"
       >
         {DUST.map((d, i) => (
           <span

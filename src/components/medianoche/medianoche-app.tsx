@@ -202,8 +202,8 @@ export function MedianocheApp() {
           <NameScreen initial={name || prefill} dateLabel={config.dateLabel} brand={config.brand} onSubmit={chooseName} />
         )}
         {!askName && name && cur.kind === "title" && (
-          <section className="chapter-in relative flex min-h-dvh flex-col items-center justify-end px-4 pb-[max(2rem,var(--safe-bottom))] pt-16 text-center sm:px-8">
-            <div className="w-[min(52vw,220px)] sm:w-[240px]">
+          <section className="chapter-in relative flex min-h-dvh flex-col items-center justify-end px-4 pb-[max(2rem,calc(var(--safe-bottom)+1rem))] pt-[max(4rem,calc(var(--safe-top)+3rem))] text-center sm:px-8">
+            <div className="w-[min(52vw,220px,30svh)] shrink-0 sm:w-[min(240px,30svh)]">
               <Owl pose="feliz" />
             </div>
             <div className="panel mt-[-10px] w-full max-w-xl px-5 py-7 sm:px-8">
